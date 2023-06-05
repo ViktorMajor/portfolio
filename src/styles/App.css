@@ -1,0 +1,69 @@
+.App {
+  background-image: url('../media/bg4.jpeg');
+  background-repeat: no-repeat; /* Eltávolítja az ismétlődő háttérkép ismétlődését */
+  background-size: cover; /* Az háttérkép mérete kitölti a háttért, és vágja a felesleges részeket */
+  background-position: center; /* A kép középre igazítása a háttérben */
+  background-attachment: fixed; /* Az háttérkép fixen marad, amikor görgeted az oldalt */
+  /* #E0E7E9, #A3C6C4, #354649, #6c7a89  */
+}
+
+body {
+  font-family: 'Special Elite';
+  margin: 0;
+  background-color: #E0E7E9;
+  animation: fadeIn 2s ease-in;
+}
+p {
+  text-align: justify;
+}
+h1 {
+  color: #A3C6C4;
+}
+button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #A3C6C4;
+  color: #E0E7E9;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+button:hover {
+  background-color: #6C7A89;
+  animation: pulse 1.5s infinite;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity .2s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity .5s ease-out;
+}
