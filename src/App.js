@@ -30,16 +30,16 @@ function App() {
   if (showComponents) {
     return (
       <div className="App">
-        <Element name="home">   {/* Added Element component */}
+        <Element name="home">  
           <Home />
         </Element>
         {showHeader ? <Header className='fade-in' /> : <Header className='fade-out' />}
 
-        <Element name="about">  {/* Added Element component */}
+        <Element name="about">  
           <About />
         </Element>
         <Skills />
-        <Element name="projects"> {/* Added Element component */}
+        <Element name="projects"> 
           <Projects />
         </Element>
         <Contact />
