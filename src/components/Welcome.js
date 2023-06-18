@@ -5,7 +5,6 @@ const greetings = [
   'Welkom!',
   'Hola!', // spanyol
   'Ciao!', // olasz
- 
   'こんにちは!', // japán
   'Powitanie!', // kínai
   'Hello!', // angol

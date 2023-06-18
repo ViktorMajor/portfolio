@@ -1,15 +1,18 @@
 import "../styles/Header.css";
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
+
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-scroll";
+
 
 const Header = ({ className }) => {
+
+
   return (
     <header id="header" className={className}>
       <nav>
-      
         <div className="social-container">
-          <p>Follow us on -</p>
+          <p>Follow us on</p>
           <a
             className="social-icon"
             href="https://www.linkedin.com/in/viktormajor/"
@@ -26,30 +29,39 @@ const Header = ({ className }) => {
           >
             <FaGithub size="1.5em" />
           </a>
-          <a
-            className="social-icon"
-            href="mailto:viktormajor@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <AiOutlineMail size="1.5em" />
-          </a>
         </div>
 
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              offset={-55}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <a href="#about">About</a>
+            <Link to="about" smooth={true} duration={500} offset={-55} >
+              About
+            </Link>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <Link to="skills" smooth={true} duration={500} offset={-55}>
+              Skills
+            </Link>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <Link to="projects" smooth={true} duration={500} offset={-55}>
+              Projects
+            </Link>
           </li>
-          
+          <li>
+            <Link to="contact" smooth={true} duration={500} offset={-55}>
+              Contact
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

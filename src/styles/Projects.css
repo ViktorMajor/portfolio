@@ -1,35 +1,33 @@
 .projects-container {
   background-color: rgba(54, 71, 74, 0.5);
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 20px;
   border-radius: 5px;
   max-width: 800px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-  color: #E0E7E9;
-  transition: transform .2s; /* Animation */
-  opacity: 0.9;
-  animation: fade-in 1s;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  color: #e0e7e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-card {
   position: relative;
   margin: 2rem;
-  width: 80%;
-  
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(27, 23, 23, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  animation: fadeIn 1s ease-out;
 }
 
-.video-background {
+.project-image {
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .project-content {
@@ -44,28 +42,20 @@
   margin-top: 1.5rem;
 }
 
-
-
-.demo-button {
-  background-color: #A3C6C4;
-  color: #E0E7E9;
+.demo-button, .code-button {
+  background-color: #a3c6c4;
+  color: #e0e7e9;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
-.code-button {
-  background-color: #A3C6C4;
-  color: #E0E7E9;
-}
-
-button:hover {
-  transform: scale(1.05);
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.demo-button:hover, .code-button:hover {
+  background-color: #e0e7e9;
+  color: #a3c6c4;
 }

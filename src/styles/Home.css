@@ -1,23 +1,30 @@
-
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-
-svg {
+.home-container svg {
   position: absolute;
   transform: translate(0px, 300px);
   transition: all 0.5s ease;
   z-index: 91; /* A nagy szám biztosítja, hogy az elem a többi elem felett legyen */
 }
-
 
 .home-container {
   display: flex;
@@ -26,7 +33,6 @@ svg {
   justify-content: center;
   text-align: center;
   height: 100vh;
-  
 }
 
 .intro-text {
@@ -37,19 +43,15 @@ svg {
 }
 
 p {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #E0E7E9;
+  color: #e0e7e9;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin: 0;
-  white-space: pre;
 }
-
 
 .myTypist {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #A3C6C4;
+  color: #a3c6c4;
   margin-bottom: 3rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -64,7 +66,6 @@ p {
   gap: 3rem;
   margin-top: 1rem;
   z-index: 111; /* A nagy szám biztosítja, hogy az elem a többi elem felett legyen */
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -73,12 +74,13 @@ p {
     height: 500px;
   }
 
- svg {
-   display: none;
- 
- }
+  svg {
+    display: none;
+  }
 
-  p, .myTypist, .myCursor {
+  p,
+  .myTypist,
+  .myCursor {
     font-size: 1.2rem;
   }
 

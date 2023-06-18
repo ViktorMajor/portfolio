@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     const handleScroll = () => {
       const position = window.pageYOffset;
-      if (position > 0) {
+      if (position > 50) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="intro-text">
-        <p>Hi! I am{' '}</p>
+        <p>Hi! I am </p>
         <Typist
           sentences={[
             " Viktor Major!",
@@ -56,13 +56,14 @@ const Home = () => {
       </div>
 
       <div className="button-container">
-        <Link to="about" smooth={true} duration={500}>
+        <Link to="about" smooth={true} duration={500} offset={-55}>
           <button>About me</button>
         </Link>
-        <Link to="projects" smooth={true} duration={500}>
+        <Link to="projects" smooth={true} duration={500} offset={-55}>
           <button>My projects</button>
         </Link>
       </div>
+
       {isScrolled && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -70,12 +71,38 @@ const Home = () => {
           xmlnsXlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 800 800"
         >
-          <g strokeWidth="4" stroke="#a3c6c4" fill="none" strokeLinecap="round" strokeLinejoin="round" transform="matrix(1,0,0,1,-12,0)">
-            <path d="M268.7515678405762 279Q118.75156784057617 500 389.7515678405762 400Q704.7515678405762 266 510.7515678405762 521 " markerEnd="url(#SvgjsMarker3276)"></path>
+          <g
+            strokeWidth="4"
+            stroke="#a3c6c4"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            transform="matrix(1,0,0,1,-12,0)"
+          >
+            <path
+              d="M268.7515678405762 279Q118.75156784057617 500 389.7515678405762 400Q704.7515678405762 266 510.7515678405762 521 "
+              markerEnd="url(#SvgjsMarker3276)"
+            ></path>
           </g>
           <defs>
-            <marker markerWidth="10" markerHeight="10" refX="5" refY="5" viewBox="0 0 10 10" orient="auto" id="SvgjsMarker3276">
-              <polyline points="0,5 5,2.5 0,0" fill="none" strokeWidth="1.6666666666666667" stroke="#a3c6c4" strokeLinecap="round" transform="matrix(1,0,0,1,1.6666666666666667,2.5)" strokeLinejoin="round"></polyline>
+            <marker
+              markerWidth="10"
+              markerHeight="10"
+              refX="5"
+              refY="5"
+              viewBox="0 0 10 10"
+              orient="auto"
+              id="SvgjsMarker3276"
+            >
+              <polyline
+                points="0,5 5,2.5 0,0"
+                fill="none"
+                strokeWidth="1.6666666666666667"
+                stroke="#a3c6c4"
+                strokeLinecap="round"
+                transform="matrix(1,0,0,1,1.6666666666666667,2.5)"
+                strokeLinejoin="round"
+              ></polyline>
             </marker>
           </defs>
         </svg>
