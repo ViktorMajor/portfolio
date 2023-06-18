@@ -12,7 +12,7 @@ const Header = ({ className }) => {
     <header id="header" className={className}>
       <nav>
         <div className="social-container">
-          <p>Follow us on</p>
+          <p>Follow me on</p>
           <a
             className="social-icon"
             href="https://www.linkedin.com/in/viktormajor/"
