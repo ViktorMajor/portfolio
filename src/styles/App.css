@@ -67,3 +67,6 @@ button:hover {
   opacity: 0;
   transition: opacity .5s ease-out;
 }
+.introtext>p {
+  font-size: 30px;
+}
