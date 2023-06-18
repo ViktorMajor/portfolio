@@ -8,9 +8,9 @@ const Contact = () => {
       <p>You can reach me at:</p>
       <ul>
         <li>Email: majorviktor95@gmail.com</li>
-        <li>Phone: 0630 84 999 84</li>
-        <li>LinkedIn: linkedin.com/in/myprofile</li>
-        <li>GitHub: github.com/myprofile</li>
+        <li>Phone: +36 30 84 999 84</li>
+        
+        <li>GitHub: github.com/viktormajor</li>
       </ul>
     </div>
   )
