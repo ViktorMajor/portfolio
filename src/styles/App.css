@@ -1,9 +1,9 @@
 .App {
   background-image: url('../media/bg4.jpeg');
-  background-repeat: no-repeat; /* Eltávolítja az ismétlődő háttérkép ismétlődését */
-  background-size: cover; /* Az háttérkép mérete kitölti a háttért, és vágja a felesleges részeket */
-  background-position: center; /* A kép középre igazítása a háttérben */
-  background-attachment: fixed; /* Az háttérkép fixen marad, amikor görgeted az oldalt */
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
   /* #E0E7E9, #A3C6C4, #354649, #6c7a89  */
 }
 
@@ -34,8 +34,8 @@ button {
 }
 
 button:hover {
-  background-color: #6C7A89;
-  animation: pulse 1.5s infinite;
+  background-color: #e0e7e9;
+  color: #a3c6c4;
 }
 
 .fade-enter {
@@ -75,6 +75,6 @@ button:hover {
 
 @media only screen and (max-width: 600px) {
   p {
-    font-size: 1rem
+    font-size: .9rem
   }
 }

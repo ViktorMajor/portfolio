@@ -39,11 +39,11 @@
 }
 
 .about-container p {
-  font-size: 1.3em;
-  line-height: 1.6;
+  font-size: 1.1em;
+  line-height: 1.5;
   white-space: normal;
-  word-wrap: break-word; /* Older browsers */
-  overflow-wrap: break-word; /* Modern browsers */
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
 }
 
 @keyframes fadeIn {
@@ -63,24 +63,46 @@
 .first-text {
   margin-left: 20px; /* adjust this to give the desired space between the image and the text */
 }
-
 .img-container {
   margin: 3rem;
-  border: 5px solid #A3C6C4;
-  height: 15vw;
-  width: 15vw;
+  height: 18vw;
+  width: 17vw;
   border-radius: 50%;
-  overflow: hidden; /* to keep the image round */
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0; /* prevent flexbox from resizing the image container */
+  flex-shrink: 0;
+  position: relative;
+}
+
+.img-container::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+  background: linear-gradient(120deg, #a3c6c4 0%, #354649 100%);
+  border-radius: 50%;
+  animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 img {
   height: 100%;
-  object-fit: cover; /* to maintain image aspect ratio */
+  object-fit: cover;
 }
+
 @media only screen and (max-width: 600px) {
   .img-container {
     height: 50vw;

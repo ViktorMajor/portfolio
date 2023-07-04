@@ -1,12 +1,10 @@
-.contact-container {
+.contact-card {
   background-color: rgba(54, 71, 74, 0.5);
   margin: 80px auto 0 auto;
   padding: 20px;
   border-radius: 5px;
   max-width: 70%;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-  color: #E0E7E9;
-  transition: transform .2s; /* Animation */
+  transition: transform .2s; 
   opacity: 0.9;
   animation: fade-in 1s;
   display: flex;
@@ -14,26 +12,36 @@
   align-items: center;
 }
 
-
-
-.contact-container h1 {
+.contact-card .contact-header {
   font-size: 2.5em;
   text-align: center;
   margin-bottom: 1em;
   animation: slide-in 2s;
 }
 
-.contact-container ul {
+.contact-card .contact-info {
   list-style-type: none;
   line-height: 2;
   padding-left: 0;
 }
 
-.contact-container li {
-  font-size: 1.2em;
+.contact-card .contact-info p {
+
   animation: pop-in 1s ease-out 1s both;
 }
 
-.contact-container a {
-  display: block;
+.contact-card .contact-info a {
+  text-decoration: none;
+  color: #e0e7e9;
 }
+
+.resume-button {
+  background-color: #a3c6c4;
+  color: #e0e7e9;
+}
+.resume-button:hover {
+  background-color: #e0e7e9;
+  color: #a3c6c4;
+}
+
+

@@ -27,11 +27,11 @@ header nav {
   align-items: center;
 }
 .icon {
-  width: 25px;
+  width: 35px;
   cursor: pointer;
 }
 nav a:hover {
-  transform: scale(1.05);
+  transform: scale(1);
     background-color: #6C7A89;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     color: #354649;
@@ -48,11 +48,11 @@ nav a:hover {
 }
 
 
-#header li, #header h1 {
+#header li {
   list-style: none;
-  margin: 10px 20px;
+  margin: 10px 15px;
 }
-#header a, #header h1 {
+#header a {
   display: block;
   text-decoration: none;
   color: #A3C6C4;
@@ -129,7 +129,7 @@ nav a:hover {
 }
 
 .social-container:hover .social-icon {
-  animation: slideIn 0.5s forwards;
+  animation: slideIn 0.9s forwards;
   height: 25px;
 }
 
@@ -146,21 +146,15 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-  #header nav {
-    align-items: center;
+  #header {
+    right: 0;
   }
-
-  #header ul {
-    margin-top: 10px;
+  .icon {
+    width: 15px;
   }
-
-  .social-container {
-    display: flex;
-    align-items: center;
-  }
-
-  .social-container p {
-    font-size: 1rem;
+  #header li{
+    list-style: none;
+    margin: 10px 0px;
   }
 }
 
