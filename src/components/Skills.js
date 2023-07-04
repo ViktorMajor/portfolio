@@ -29,8 +29,7 @@ const Skills = () => {
       <ul className="skills-list">
         <li><img src={githubIcon} className="icon" alt="GitHub"/>GitHub</li>
         <li><img src={webpackIcon} className="icon" alt="Webpack"/>Webpack</li>
-        <li><img src={canvaIcon} className="icon" alt="Canva"/>Canva</li>
-        <li><img src={npmIcon} className="icon" alt="Canva"/>Npm</li>
+        <li><img src={npmIcon} className="icon" alt="Npm"/>Npm</li>
       </ul>
     </div>
   )
