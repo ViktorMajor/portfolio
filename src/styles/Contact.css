@@ -23,6 +23,8 @@
   list-style-type: none;
   line-height: 2;
   padding-left: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .contact-card .contact-info p {
@@ -34,14 +36,58 @@
   text-decoration: none;
   color: #e0e7e9;
 }
-
 .resume-button {
   background-color: #a3c6c4;
   color: #e0e7e9;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  overflow: hidden;
+  display: inline-block;
+  margin: 55px 15px;
+  transition: background-color 0.3s;
 }
+
 .resume-button:hover {
-  background-color: #e0e7e9;
-  color: #a3c6c4;
+  background-color: #7da8a0;
 }
 
+.resume-button:before,
+.resume-button:after {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  top: -20%;
+  left: -20%;
+}
 
+.resume-button:before {
+  background: rgba(255,255,255,0.05);
+  transform: rotate(45deg);
+  animation: ribbon 5s linear infinite;
+}
+
+.resume-button:after {
+  background: rgba(255,255,255,0.025);
+  transform: rotate(-45deg);
+  animation: ribbon-reverse 5s linear infinite;
+}
+
+@keyframes ribbon {
+  0% { transform: rotate(45deg) translateX(0); }
+  100% { transform: rotate(45deg) translateX(-800px); }
+}
+
+@keyframes ribbon-reverse {
+  0% { transform: rotate(-45deg) translateX(0); }
+  100% { transform: rotate(-45deg) translateX(-800px); }
+}
+
+@media (max-width: 768px) {
+  .contact-card .contact-info {
+    flex-direction: column;
+  }
+}
