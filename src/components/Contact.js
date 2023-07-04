@@ -1,19 +1,31 @@
-import React from 'react';
-import '../styles/Contact.css';
+import React from "react";
+import "../styles/Contact.css";
 
 const Contact = () => {
-  return(
-    <div className="contact-container">
-      <h1>Contact Me</h1>
-      
-      <ul>
-        <li>Email: majorviktor95@gmail.com</li>
-        <li>Phone: +36 30 84 999 84</li>
-        
-        <li>GitHub: github.com/viktormajor</li>
-      </ul>
-    </div>
-  )
-}
+  return (
+    <React.Fragment>
+      <div className="contact-card">
+        <h1 className="contact-header">Contact Me</h1>
+        <div className="contact-info">
+          <p><strong>Email:</strong> majorviktor95@gmail.com</p>
+          <p><strong>Phone:</strong> +36 30 84 999 84</p>
+          <p>
+            <strong>LinkedIn:</strong> 
+            <a href="https://www.linkedin.com/in/viktor-major-559b2a250/" target="_blank" rel="noopener noreferrer">
+              Viktor Major
+            </a>
+          </p>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/viktormajor" target="_blank" rel="noopener noreferrer">
+              viktormajor
+            </a>
+          </p>
+          <button onClick={() => download()}>Töltsd le az önéletrajzom</button>
+        </div>
+      </div>
+    </React.Fragment>
+  );
+};
 
-export default Contact
+export default Contact;

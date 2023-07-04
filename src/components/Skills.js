@@ -7,7 +7,7 @@ import reactIcon from '../media/react.png';
 import bootstrapIcon from '../media/bootstrap.png';
 import githubIcon from '../media/github.png';
 import webpackIcon from '../media/webpack.png';
-import canvaIcon from '../media/canva.png';
+
 import npmIcon from '../media/npm.png';
 
 const Skills = () => {

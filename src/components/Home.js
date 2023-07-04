@@ -23,9 +23,7 @@ const Home = () => {
     };
   }, []);
 
-  const handleTypeFinish = () => {
-    console.log("All sentences have been typed out!");
-  };
+
 
   return (
     <div className="home-container">
@@ -51,7 +49,7 @@ const Home = () => {
           cursorClassName="myCursor"
           style={{ fontSize: "2.5rem", color: "#E0E7E9" }}
           defaultText="Starting..."
-          onTypeFinish={handleTypeFinish}
+    
         />
       </div>
 

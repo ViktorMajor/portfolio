@@ -21,9 +21,9 @@
 
 .home-container svg {
   position: absolute;
-  transform: translate(0px, 300px);
+  transform: translate(20px, 270px);
   transition: all 0.5s ease;
-  z-index: 91; /* A nagy szám biztosítja, hogy az elem a többi elem felett legyen */
+  z-index: 91;
 }
 
 .home-container {
